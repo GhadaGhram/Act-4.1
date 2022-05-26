@@ -1,16 +1,9 @@
 <html>
-
 <head>
-
-<meta charset=utf-8 />
-
-
-
+  <meta charset=utf-8 />
 </head>
-
 <body>
   <script>
-
   function getxhr(){
     try { xhr=new XMLHttpRequest(); }
     catch(e){
@@ -29,19 +22,14 @@
          obxml=xhr.responseXML;
 
            document.getElementById("evenement").innerHTML=obxml.getElementsByTagName('titre').item(0).textContent;
-
-
-
          }
   }
   xhr.open("GET","evenement.xml",true);
   xhr.send();
   }
 
-
-
   </script>
-	<button onclick="ajax()">evenement</button>
+	<button onclick="ajax()">Afficher l'evenement</button>
   <div id="evenement"></div>
 
 </body>
