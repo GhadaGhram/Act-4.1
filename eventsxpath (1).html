@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        showResult(xhttp.responseXML);
+    }
+};
+xhttp.open("GET", "evenementxpath.xml", true);
+xhttp.send();
+  function showResult(xml) {
+      var txt = "";
+      path1 = "/Evenements/Evenement/date"
+      path2 = "/Evenements/Evenement/budget"
+      path3 = "/Evenements/Evenement/participants/invites/invite[2]/nominv"
+      if (xml.evaluate) {
+          var nodes = xml.evaluate(path1, xml, null, XPathResult.ANY_TYPE, null);
+          var nodes2 = xml.evaluate(path2, xml, null, XPathResult.ANY_TYPE, null);
+          var nodes3 = xml.evaluate(path3, xml, null, XPathResult.ANY_TYPE, null);
+          var result = nodes.iterateNext();
+          while (result) {
+              txt += result.childNodes[0].nodeValue + "<br>";
+              result = nodes.iterateNext();
+          }
+      // Code For Internet Explorer
+      } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+          xml.setProperty("SelectionLanguage", "XPath");
+          nodes = xml.selectNodes(path1);
+          nodes = xml.selectNodes(path2);
+          nodes = xml.selectNodes(path3);
+          for (i = 0; i < nodes.length; i++) {
+              txt += nodes[i].childNodes[0].nodeValue + "<br>";
+          }
+      }
+      document.getElementById("demo").innerHTML = txt;
+  }
+
+
+  </script>
+	<button onclick="ajax()">evenement</button>
+  <div id="evenement"></div>
+
+</body>
+
+</html>
