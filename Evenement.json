@@ -1,0 +1,64 @@
+{
+    "Evenements": {
+        "Evenement": {
+            "titre": "Mobile and API Tests",
+            "theme": "Informatique",
+            "date": "01-06-2022",
+            "lieu": "United States",
+            "budget": "1000 DOL",
+            "activites": {
+                "activite": [
+                    {
+                        "titreact": "Séance de formation",
+                        "dureeact": "Trois heures"
+                    },
+                    {
+                        "titreact": "Workshop",
+                        "dureeact": "deux heures"
+                    },
+                    {
+                        "titreact": "Tests de connaissance",
+                        "dureeact": "une heure"
+                    }
+                ]
+            },
+            "participants": {
+                "invites": {
+                    "invite": [
+                        {
+                            "nominv": "jihene saidene",
+                            "IDinv": "01",
+                            "Etabinv": "Talan"
+                        },
+                        {
+                            "nominv": "ghada ghram",
+                            "IDinv": "02",
+                            "Etabinv": "Talan"
+                        },
+                        {
+                            "nominv": "Ayoub belhadj youssef",
+                            "IDinv": "03",
+                            "Etabinv": "Talan"
+                        }
+                    ]
+                },
+                "intervenants": {
+                    "intervenant": [
+                        {
+                            "nomint": "Emma Huynh",
+                            "IDint": "01",
+                            "Etabint": "Katalan",
+                            "langue": "francais"
+                        },
+                        {
+                            "nomint": "Michel Chris Dion",
+                            "IDint": "02",
+                            "Etabint": "Katalon",
+                            "langue": "Anglais"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
