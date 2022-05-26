@@ -2,63 +2,57 @@
 <Evenements>
 
   <Evenement>
-    <titre>lancement d'un nouveau livre</titre>
-    <theme>culturel</theme>
-    <date>28-05-2022</date>
-    <lieu>cite de la culture</lieu>
-    <budget>1000 DNT</budget>
+    <titre>Mobile and API Tests</titre>
+    <theme>Informatique</theme>
+    <date>01-06-2022</date>
+    <lieu>United States</lieu>
+    <budget>1000 DOL</budget>
     <activites>
       <activite>
-         <titreact>seance de signature</titreact>
-         <dureeact>une heure</dureeact>
+         <titreact>Séance de formation</titreact>
+         <dureeact>Trois heures</dureeact>
       </activite>
       <activite>
-         <titreact>debat</titreact>
+         <titreact>Workshop</titreact>
          <dureeact>deux heures</dureeact>
        </activite>
       <activite>
-         <titreact>conference de presse</titreact>
+         <titreact>Tests de connaissance</titreact>
          <dureeact>une heure</dureeact>
       </activite>
     </activites>
     <participants>
-
       <invites>
        <invite>
          <nominv>jihene saidene</nominv>
          <IDinv>01</IDinv>
-         <NEinv>dar ennacher</NEinv>
+         <Etabinv>Talan</Etabinv>
        </invite>
        <invite>
          <nominv>ghada ghram</nominv>
          <IDinv>02</IDinv>
-         <NEinv>IFT</NEinv>
+         <Etabinv>Talan</Etabinv>
        </invite>
        <invite>
          <nominv>Ayoub belhadj youssef</nominv>
          <IDinv>03</IDinv>
-         <NEinv>la presse</NEinv>
+         <Etabinv>Talan</Etabinv>
        </invite>
       </invites>
-
       <intervenants>
         <intervenant>
-          <nomint>taher elfazaa</nomint>
+          <nomint>Emma Huynh</nomint>
           <IDint>01</IDint>
-          <NEint>NA</NEint>
+          <Etabint>Katalan</Etabint>
           <langue>francais</langue>
         </intervenant>
         <intervenant>
-          <nomint>faten elfazaa</nomint>
+          <nomint>Michel Chris Dion</nomint>
           <IDint>02</IDint>
-          <NEint>NA</NEint>
-          <langue>francais</langue>
+          <Etabint>Katalon</Etabint>
+          <langue>Anglais</langue>
         </intervenant>
       </intervenants>
-
     </participants>
   </Evenement>
-
-
-
 </Evenements>
